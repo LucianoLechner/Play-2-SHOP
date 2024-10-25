@@ -38,6 +38,7 @@
     font-family: "Oxanium", sans-serif;
     letter-spacing: 2px;
     font-weight: bolder;
+    text-transform: uppercase;
 }
 
 .filterimg{
@@ -72,9 +73,44 @@
     color: black;
 }
 
+.navbar-toggler-icon{
+    background-color: transparent;
+    color: transparent;
+
+    & .bi-list{
+        color: #f2ae0a;
+        font-size: 2.5rem;
+    }
+}
+
+.console-card{
+    background-color: black;
+}
+
+.console-card-border{
+    border: none;
+}
+
+.p-end{
+    display: flex;
+    justify-content: end;
+}
+
 .card-img-top {
     width: 100%; 
 }
+
+.parent-card{
+    position: relative;
+}
+
+.card-3, .card-4{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
 
 @media (min-width: 768px) {
     .card-img-top {

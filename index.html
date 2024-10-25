@@ -12,27 +12,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-    <header class="d-flex justify-content-between align-items-center p-2 position-abolute top-0 z-3 w-100">
-        <div class="d-flex gap-5 align-items-center">
+    <header class="navbar navbar-expand-lg pt-3">
+        <div class="container">
             <h1 class="fonth1">Play 2 Shop</h1>
-            <nav class="">
-                <ul class="d-flex align-items-center list-unstyled gap-3 pt-3">
-                    <li><button class="btn btn-secondary btn-style"><a href="#" class="astyle">Sobre</a></button></li>
-                    <li><button class="btn btn-secondary btn-style"><a href="#" class="astyle">Console</a></button></li>
-                    <li>
+            <button type="button" class="navbar-toggler p-0 mb-4" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon p-0"><i class="bi bi-list p-0"></i></span>
+            </button> 
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills gap-4">
+                    <li class=" nav-item"><button class="btn btn-secondary btn-style"><a href="#" class="astyle">Sobre</a></button></li>
+                    <li class=" nav-item"><button class="btn btn-secondary btn-style"><a href="#" class="astyle">Console</a></button></li>
+                    <li class=" nav-item">
                         <div class="dropdown">
                             <button type="button" class="btn btn-secondary dropdown-toggle btn-style astyle" data-bs-toggle="dropdown">Categorias</button>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a href="#" class="dropdown-item">Ação</a></li>
-                                <li><a href="#" class="dropdown-item">Mundo aberto</a></li>
-                                <li><a href="#" class="dropdown-item">Esportes</a></li>
+                                <li><a href="#black" class="dropdown-item">Ação</a></li>
+                                <li><a href="#readdead" class="dropdown-item">Mundo aberto</a></li>
+                                <li><a href="#pes2010" class="dropdown-item">Esportes</a></li>
                             </ul>
                         </div>
                     </li>
                 </ul>
             </nav>
         </div>
-        <button type="button" class="btn btn-style">Compre agora</button>
     </header>
 
     <div class="carousel slide" id="carouselslide" data-bs-ride="carousel">
@@ -58,24 +60,24 @@
 
     <div class="container p-5">
         <div class="row">
-            <h1 class="fonth1 text-center p-5">COMPRAR JOGOS</h1>
+            <h1 class="fonth1 text-center d-block pb-3">COMPRAR JOGOS</h1>
         </div>
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="card text-bg-dark">
+                <div class="card text-bg-dark" id="readdead">
                     <img src="./games/readdead.jpg" alt="img" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-tittle h5style">Read Dead Revolver</h5>
-                        <a href="#" class="btn btn-primary d-block btn-card-style">R$ 2,49</a>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Download</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="card text-bg-dark">
+                <div class="card text-bg-dark" id="black">
                     <img src="./games/black.jpg" alt="img" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-tittle h5style">Black</h5>
-                        <a href="#" class="btn btn-primary d-block btn-card-style">R$ 2,49</a>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Download</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +86,7 @@
                     <img src="./games/bombapach.webp" alt="img" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-tittle h5style">Bomba Pach</h5>
-                        <a href="#" class="btn btn-primary d-block btn-card-style">R$ 2,49</a>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Download</a>
                     </div>
                 </div>
             </div>
@@ -93,16 +95,16 @@
                     <img src="./games/fifa.jpg" alt="img" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-tittle h5style">Fifa</h5>
-                        <a href="#" class="btn btn-primary d-block btn-card-style">R$ 2,49</a>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Download</a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3 mb-4">
-                <div class="card text-bg-dark">
+                <div class="card text-bg-dark" id="pes2010">
                     <img src="./games/pes2010.png" alt="img" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-tittle h5style">PES 2010</h5>
-                        <a href="#" class="btn btn-primary d-block btn-card-style">R$ 2,49</a>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Download</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +113,7 @@
                     <img src="./games/resident.jpg" alt="img" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-tittle h5style">Resident Evil Outbreak</h5>
-                        <a href="#" class="btn btn-primary d-block btn-card-style">R$ 2,49</a>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Download</a>
                     </div>
                 </div>
             </div>
@@ -120,7 +122,7 @@
                     <img src="./games/simpsons.png" alt="img" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-tittle h5style">The Simpsons Hit and Run</h5>
-                        <a href="#" class="btn btn-primary d-block btn-card-style">R$ 2,49</a>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Download</a>
                     </div>
                 </div>
             </div>
@@ -129,7 +131,7 @@
                     <img src="./games/sony.jpg" alt="img" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-tittle h5style">Sony</h5>
-                        <a href="#" class="btn btn-primary d-block btn-card-style">R$ 2,49</a>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Download</a>
                     </div>
                 </div>
             </div>
@@ -138,7 +140,7 @@
                     <img src="./games/tekken.png" alt="img" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-tittle h5style">Tekken V</h5>
-                        <a href="#" class="btn btn-primary d-block btn-card-style">R$ 2,49</a>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Download</a>
                     </div>
                 </div>
             </div>
@@ -147,7 +149,53 @@
                     <img src="./games/wwe.jpg" alt="img" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-tittle h5style">WWE</h5>
-                        <a href="#" class="btn btn-primary d-block btn-card-style">R$ 2,49</a>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="fonth1 text-center">Console</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card text-bg-dark console-card-border" id="">
+                    <img src="./images/cconsole.png" alt="img" class="card-img-top console-card">
+                    <div class="card-body">
+                        <h5 class="card-tittle h5style">Somente Console</h5>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card text-bg-dark console-card-border" id="">
+                    <img src="./images/console-controle.png" alt="img" class="card-img-top console-card">
+                    <div class="card-body">
+                        <h5 class="card-tittle h5style">Console Completo</h5>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 pt-1">
+                <div class="card text-bg-dark console-card-border">
+                    <img src="./images/controle.png" alt="img" class="card-img-top console-card pt-5">
+                    <div class="card-body">
+                        <h5 class="card-tittle h5style">controle</h5>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 pt-3">
+                <div class="card text-bg-dark console-card-border">
+                    <img src="./images/PS2-8MB-Mem-Card.png" alt="img" class="card-img-top console-card pt-5">
+                    <div class="card-body">
+                        <h5 class="card-tittle h5style">Memory Card</h5>
+                        <a href="#" class="btn btn-primary d-block btn-card-style">Comprar</a>
                     </div>
                 </div>
             </div>
