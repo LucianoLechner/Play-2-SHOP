@@ -83,6 +83,11 @@
     }
 }
 
+.p-style{
+    font-family: "Oxanium", sans-serif;
+    text-align: justify;
+}
+
 .console-card{
     background-color: black;
 }
@@ -100,13 +105,35 @@
     width: 100%; 
 }
 
-.parent-card{
+.game-card{
+    width: 100%;
+    height: 100%;
+}
+
+/* .parentcard{
     position: relative;
 }
 
-.card-3, .card-4{
+.cardchild{
     position: absolute;
     bottom: 0;
+} */
+
+.color-font{
+    color: #d5630c;
+    font-weight: bold;
+}
+
+input::placeholder {
+    font-family: "Oxanium", sans-serif;
+}
+
+.form-control{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-control:focus{
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -114,10 +141,41 @@
 
 @media (min-width: 768px) {
     .card-img-top {
+        max-height: 250px;
+
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    /* .parentcard{
+        position: relative;
+    }
+    
+    .cardchild{
+        position: absolute;
+        bottom: 0;
+    } */
+}
+
+@media (width > 992px) {
+    /* .card-img-top {
         max-height: 300px; 
         object-fit: initial; 
+    } */
+
+    .parentcard{
+        position: relative;
+    }
+    
+    .cardchild{
+        position: absolute;
+        bottom: 0;
     }
 }
+
 
 
 
